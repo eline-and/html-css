@@ -1,0 +1,118 @@
+/* Coded by @eline-and */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    background-image: linear-gradient(45deg, rgba(210, 210, 255, 0.678), rgba(253, 253, 209, 0.795), rgba(252, 207, 215, 0.856));
+    background-attachment: fixed;
+}
+
+main {
+    width: 600px;
+    margin: auto;
+    line-height: 1.5em;
+    background-color: rgba(182, 181, 181, 0.452);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 60px;
+    margin-top: 12px;
+}
+
+header,
+h2 {
+    text-align: center;
+}
+
+div {
+    margin: 12px 0;
+}
+
+.label,
+legend {
+    font-weight: bold;
+}
+
+input,
+select,
+#msg {
+    border: solid 2px rgba(85, 85, 85, 0);
+}
+
+input:focus,
+select:focus,
+#msg:focus {
+    border: solid 2px rgba(102, 51, 153, 0.678);
+}
+
+#nome,
+#email,
+#msg {
+    width: 96%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#areas {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+#msg {
+    resize: none;
+    height: 100px;
+}
+
+#submit,
+#reset {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 46%;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#submit {
+    background-color: rgba(102, 51, 153, 0.678);
+    color: white;
+}
+
+#submit:hover {
+    cursor: pointer;
+    border: rgba(102, 51, 153, 0.678) 2px solid;
+    background-color: rgb(236, 235, 235);
+    color: #333;
+}
+
+#reset {
+    background-color: #333;
+    color: white;
+}
+
+#reset:hover {
+    cursor: pointer;
+    border: #333 2px solid;
+    background-color: rgb(236, 235, 235);
+    color: #333;
+}
+
+@media (max-width:630px) {
+    main {
+        width: 100%;
+    }
+    #submit,
+    #reset {
+        display: block;
+        width: 100%;
+    }
+}

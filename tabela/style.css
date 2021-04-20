@@ -1,0 +1,85 @@
+/* Coded by @eline-and */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(214, 214, 214);
+    color: #333;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+main {
+    width: 1200px;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(210, 241, 241);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(177, 173, 173);
+}
+
+th {
+    color: #333;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+tr {
+    color: #333;
+}
+
+table tr:hover {
+    background-color: rgb(68, 46, 97);
+    color: white;
+}
+
+td {
+    text-align: left;
+    padding: 10px 20px 10px 10px;
+}
+
+@media (max-width:1200px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+    table {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:750px) {
+    main {
+        width: 95%;
+    }
+    caption {
+        width: 80vw;
+    }
+}
