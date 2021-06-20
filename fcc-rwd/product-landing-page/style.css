@@ -1,0 +1,270 @@
+/* Coded by eline-and */
+
+* {
+    margin: 0px;
+}
+
+:root {
+    --gray: #cacaca;
+    --lilac: #8180A6;
+    --dark: #333;
+    --purple: #312741;
+    --black: #000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: var(--dark);
+    color: var(--gray);
+}
+
+header {
+    background-color: var(--lilac);
+    position: sticky;
+    top: 0px;
+    text-align: left;
+    height: 70px;
+    /* para o video não passar por cima da barra fixa */
+    z-index: 2;
+}
+
+#header-img {
+    position: relative;
+    top: 16px;
+    left: 60px;
+    width: 40px;
+    height: auto;
+    color: var(--black);
+}
+
+#brand {
+    color: var(--black);
+    padding: 10px 0px;
+    padding-right: 20px;
+    display: inline;
+    position: relative;
+    bottom: 28px;
+    left: 100px;
+}
+
+#nav-bar {
+    position: relative;
+    left: 200px;
+    bottom: 80px;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    padding: 23px 20px;
+}
+
+.nav-link:hover {
+    background-color: var(--purple);
+    color: var(--gray);
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: 115px;
+        position: sticky;
+        top: 0;
+    }
+    #nav-bar {
+        height: 30px;
+        display: block;
+    }
+    .nav-link {
+        margin: 0px;
+        position: relative;
+        top: 81px;
+        padding: 10px 20px;
+        right: 200px;
+    }
+}
+
+#main {
+    width: 800px;
+    text-align: center;
+    margin: 20px auto;
+    line-height: 2em;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h1,
+h2 {
+    margin: 10px 0px;
+}
+
+section {
+    margin: 40px 0px;
+}
+
+#signup {
+    background-color: #c0c0c0;
+    color: var(--dark);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#email {
+    width: 300px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* para o video não passar por cima da barra fixa */
+    z-index: 1;
+}
+
+#box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why-div {
+    background-color: #c0c0c0;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 340px;
+    height: auto;
+    color: var(--dark);
+}
+
+
+/* Medium */
+
+@media all and (max-width: 810px) {
+    main {
+        max-width: 100%;
+    }
+    .why-div {
+        width: 100%;
+    }
+    #box-member-container {
+        justify-content: center;
+    }
+    .box-member {
+        width: 100%;
+        flex-grow: 0.3;
+    }
+}
+
+
+/* Small */
+
+@media all and (max-width: 580px) {
+    main {
+        max-width: 100%;
+    }
+    .why-div {
+        width: 100%;
+    }
+    #box-member-container {
+        justify-content: center;
+    }
+    .box-member {
+        width: 100%;
+        flex-grow: 0.3;
+    }
+    header {
+        width: 100%;
+        height: 155px;
+        position: sticky;
+        top: 0;
+    }
+    .nav-link {
+        margin: 0px;
+        position: relative;
+        top: 68px;
+        padding: 10px 20px;
+        right: 200px;
+        display: inline-block;
+    }
+    #email {
+        width: 80%;
+    }
+}
+
+#box-member-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-member {
+    width: 200px;
+    height: 360px;
+    margin: 10px;
+    padding: 10px 20px;
+    border: var(--black) solid 2px;
+}
+
+.vantage {
+    text-align: left;
+}
+
+#submit,
+button {
+    background-color: var(--lilac);
+    padding: 7px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+}
+
+#submit:hover {
+    background-color: var(--purple);
+    color: var(--gray);
+}
+
+button:hover {
+    background-color: var(--purple);
+    color: var(--gray);
+    border: var(--gray) 1px solid;
+}
+
+#button1 {
+    margin-top: 94px;
+}
+
+#button2 {
+    margin-top: 62px;
+}
+
+button {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #c0c0c0;
+    text-align: center;
+    padding: 18px;
+    color: var(--dark);
+    font-size: 14px;
+}

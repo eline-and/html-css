@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de web design responsivo para conclusão de curso no freeCodeCamp">
+    <meta name="author" content="eline-and">
+    <title>GoFit - Product Landing Page</title>
+    <link rel="stylesheet" media="All" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <figure>
+            <img id="header-img" src="https://image.flaticon.com/icons/png/512/58/58001.png" alt="Logo">
+        </figure>
+        <h1 id="brand">GoFit</h1>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#about">Gym</a>
+            <a class="nav-link" href="#why">Why us</a>
+            <a class="nav-link" href="#price">Membership</a>
+            <a class="nav-link" href="#signup">Trial</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="signup">
+            <h2>Trial</h2>
+            <p>Register your email and receive a free trial.</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <div id="video-container">
+                <iframe id="video" src="https://www.youtube.com/embed/OuU0lnRhylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="why">
+            <h2>Why us</h2>
+            <div id="box-container">
+                <div id="box-1" class="why-div">
+                    <figure>
+                        <img src="https://image.flaticon.com/icons/png/512/57/57601.png" alt="Personal coach icon" style="width: 80px;">
+                    </figure>
+                    <h3>Personal coach</h3>
+                    <p>Personalized trainning to help you to achieve your goals fastly.</p>
+                </div>
+                <div id="box-2" class="why-div">
+                    <figure>
+                        <img src="https://image.flaticon.com/icons/png/512/116/116341.png" alt="Clock icon" style="width: 80px;">
+                    </figure>
+                    <h3>Open 24 hours</h3>
+                    <p>All the convenience and flexibility you need on your daily routine.</p>
+                </div>
+                <div id="box-3" class="why-div">
+                    <figure>
+                        <img src="https://image.flaticon.com/icons/png/512/108/108753.png" alt="Lifting weight icon" style="width: 80px;">
+                    </figure>
+                    <h3>Tools and equipments</h3>
+                    <p>The best structure available for you in one place.</p>
+                </div>
+                <div id="box-4" class="why-div">
+                    <figure>
+                        <img src="https://image.flaticon.com/icons/png/512/102/102414.png" alt="Team icon" style="width: 80px;">
+                    </figure>
+                    <h3>Community</h3>
+                    <p>We grow faster when we grow together with people supporting each other.</p>
+                </div>
+            </div>
+        </section>
+        <section id="price">
+            <h2>Membership</h2>
+            <div id="box-member-container">
+                <div class="box-member">
+                    <h3>Weekly</h3>
+                    <h4>$15</h4>
+                    <p class="vantage">&#9745; Free Fitness Training</p>
+                    <p class="vantage">&#9745; Use of Tanning</p>
+                    <p class="vantage">&#9745; Use of Total Body Enhancement</p>
+                    <button id="button1">Join</button>
+                </div>
+                <div class="box-member">
+                    <h3>Monthly</h3>
+                    <h4>$55</h4>
+                    <p class="vantage">&#9745; Free Fitness Training</p>
+                    <p class="vantage">&#9745; Use of Tanning</p>
+                    <p class="vantage">&#9745; Use of Total Body Enhancement</p>
+                    <p class="vantage">&#9745; Bring a Guest Anytime</p>
+                    <button id="button2">Join</button>
+                </div>
+                <div class="box-member">
+                    <h3>Anual</h3>
+                    <h4>$650</h4>
+                    <p class="vantage">&#9745; Free Fitness Training</p>
+                    <p class="vantage">&#9745; Use of Tanning</p>
+                    <p class="vantage">&#9745; Use of Total Body Enhancement</p>
+                    <p class="vantage">&#9745; Bring a Guest Anytime</p>
+                    <p class="vantage">&#9745; Use of HydroMassage</p>
+                    <button>Join</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; 2021 GoFit. All rights reserved.
+    </footer>
+</body>
+
+</html>

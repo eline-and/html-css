@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de web design responsivo para conclusão de curso no freeCodeCamp">
+    <meta name="author" content="eline-and">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Survey Form - Hotel SafeStay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Hotel SafeStay</h1>
+            <p id="description">You can make your reservation in the survey form below</p>
+        </header>
+        <main>
+            <form id="survey-form" action="">
+                <div class="mb-3">
+                    <label id="name-label" class="form-label" for="name">Name</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label id="email-label" for="email" class="form-label">Email</label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label id="number-label" class="form-label" for="number">Guests</label>
+                    <input id="number" class="form-control" type="number" name="number" placeholder="How many guests" min="0" max="10">
+                </div>
+                <div class="mb-3">
+                    <label id="checkin-label" class="form-label" for="checkin">Check-in date</label>
+                    <input id="checkin" class="form-control" type="date" name="" placeholder="Choose a date" required>
+                </div>
+                <div class="mb-3">
+                    <label id="checkout-label" class="form-label" for="checkout">Check-out date</label>
+                    <input id="checkout" class="form-control" type="date" name="" placeholder="Choose a date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dropdown" class="form-label">Bed</label>
+                    <select name="dropdown" id="dropdown" class="form-select" aria-label="Default select example">
+                        <option selected>Select a type of bed</option>
+                        <option value="1">Single</option>
+                        <option value="2">Double</option>
+                        <option value="3">Twin</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <label class="form-check-label">Room</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Standard
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="radio" value="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Master
+                        </label>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label class="form-check-label">Facilities</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Parking
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault1" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                          Free WiFi
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault2" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          Non smoking rooms
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault3" id="flexCheckDefault3">
+                        <label class="form-check-label" for="flexCheckDefault3">
+                          Pet friendly
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault4" id="flexCheckDefault4">
+                        <label class="form-check-label" for="flexCheckDefault4">
+                          Swimming pool
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault5" id="flexCheckDefault5">
+                        <label class="form-check-label" for="flexCheckDefault5">
+                          Restaurant
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault6" id="flexCheckDefault6">
+                        <label class="form-check-label" for="flexCheckDefault6">
+                          Room service
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault7" id="flexCheckDefault7">
+                        <label class="form-check-label" for="flexCheckDefault7">
+                          Fitness center
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault8" id="flexCheckDefault8">
+                        <label class="form-check-label" for="flexCheckDefault8">
+                          Spa
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="flexCheckDefault9" id="flexCheckDefault9">
+                        <label class="form-check-label" for="flexCheckDefault9">
+                          Facilities for disabled guests
+                        </label>
+                        <br>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="mb-3">
+                    <label for="textarea" class="form-label">Any comments or requests?</label>
+                    <textarea name="textarea" id="textarea" rows="3" class="form-control" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <br>
+                <div class="mb-3">
+                    <button class="btn btn-primary form-control" id="submit" type="submit">Submit</button>
+                    <button class="btn btn-danger form-control" id="reset" type="reset">Clear</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            &copy;2021 SafeStay
+            <p><a href="https://www.freepik.com/photos/travel">Photo by pressfoto</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
